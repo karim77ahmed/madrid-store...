@@ -430,7 +430,19 @@
        max-width: 380px;
        margin: 70px auto;
      }
-
+     
+    .team-member{
+      width: 300px;
+    }
+    .team-member img{
+      width: 100px;
+    }
+    .team-member h3{
+      font-size: 25px;
+    }
+    .team-member p{
+      font-size: 15px;
+    }
    }
 
    /* end responsive */
