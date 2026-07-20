@@ -1,0 +1,437 @@
+   /* CSS */
+   /* Body */
+   @import url('https://fonts.googleapis.com/css2?family=Beiruti:wght@200..900&family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Gulzar&family=Handjet:wght@100..900&family=Playwrite+IE+Guides&display=swap');
+
+   * {
+     margin: 0;
+     padding: 0;
+     font-family: Beiruti, sans-serif;
+     box-sizing: border-box;
+     text-transform: capitalize;
+   }
+
+   :root {
+     --bgcolor: rgb(25, 24, 24);
+     --color: #fff;
+     --bgheader: #000;
+     --colorheader: #f2c94c;
+     --colorheaderhover: #b39028;
+     --h1color: #f2c94c;
+     --h1colorhover: #000;
+     --bgcard: #1e1e1e;
+     --bgbutton: #f2c94c;
+     --colorbutton: #000;
+     --bgbtnhover: #1e1e1e;
+     --colorbtnhover: #f2c94c;
+     --bgcardhover: #000;
+     --headershadow: rgba(0, 0, 0, 0.5);
+     --shadow: #eee;
+     --inputshadow: #f2c94c;
+   }
+
+   .white {
+     --bgcolor: #f0f0f0;
+     --color: #000;
+     --bgheader: #fff;
+     --colorheader: #000;
+     --h1color: #000;
+     --h1colorhover: #fff;
+     --colorheaderhover: rgba(0, 0, 0, 0.5);
+     --bgcard: #fff;
+     --bgbutton: #facc15;
+     --colorbutton: #f2c94c;
+     --bgbtnhover: #fff;
+     --colorbtnhover: #000;
+     --bgcardhover: #f2c94c;
+     --headershadow: rgba(255, 255, 255, 0.5);
+     --shadow: #888;
+     --inputshadow: #000;
+   }
+
+   body {
+     background-color: var(--bgcolor);
+     color: var(--color);
+   }
+
+   /* end body */
+
+   /* Header */
+   .header {
+     color: var(--colorheader);
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 1rem 2rem;
+     background-color: var(--bgheader);
+     box-shadow: 0 6px 6px var(--headershadow);
+     position: relative;
+     height: 80px;
+     margin-bottom: 30px;
+   }
+
+   .header a {
+     text-decoration: none;
+     font-size: 20px;
+     margin: 0 10px;
+     font-weight: bolder;
+     transition: all 0.3s ease-in-out;
+     color: var(--colorheader);
+   }
+
+   .header a:hover {
+     color: var(--colorheaderhover);
+   }
+
+   .logo {
+     display: flex;
+     align-items: center;
+   }
+
+   .logo img {
+     width: 50px;
+   }
+
+   .logo h1 {
+     font-size: 30px;
+     transition: all 0.3s ease-in-out;
+   }
+
+   .logo h1:hover {
+     color: var(--h1colorhover);
+     text-shadow: 0 0 8px var(--shadow);
+     cursor: default;
+   }
+
+   /* end header */
+
+   /* Search */
+   .search {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 90%;
+     margin: 10px auto;
+   }
+
+   .search input {
+     width: 85%;
+     margin-left: 30px;
+     padding: 15px;
+     border-radius: 16px;
+     border: none;
+     box-shadow: 0 0 6px var(--shadow);
+     outline: none;
+     font-size: 16px;
+     font-weight: bold;
+     color: var(--colorcard);
+     background-color: var(--bgcolor);
+   }
+
+   input:focus {
+     border: none;
+     box-shadow: 0 0 6px var(--inputshadow);
+     transform: scale(1.03);
+   }
+
+   /* end search  */
+
+   /* Phone List */
+   .phone-list {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+     gap: 20px;
+     padding: 1rem;
+   }
+
+   .phone-card {
+     background-color: var(--bgcard);
+     border-radius: 24px;
+     padding: 15px;
+     text-align: center;
+     border: #888 solid 1px;
+     transition: all 0.3s ease-in-out;
+   }
+
+   .phone-card:hover {
+     box-shadow: 0 0 10px var(--colorheaderhover);
+   }
+
+   .phone-card img {
+     max-width: 100%;
+     border-radius: 16px;
+     height: 350px;
+   }
+
+   .phone-card a {
+     width: 150px;
+     background-color: var(--bgbutton);
+     color: #000;
+     border: none;
+     padding: 15px 25px;
+     border-radius: 8px;
+     margin: 10px auto;
+     display: block;
+     text-decoration: none;
+     font-weight: bolder;
+     transition: all 0.3s ease-in-out;
+   }
+
+   .phone-card a:hover {
+     color: var(--colorbtnhover);
+     background-color: var(--bgbtnhover);
+     box-shadow: 0 0 10px #f2c94c;
+     letter-spacing: 2px;
+   }
+
+   .phone-card h2 {
+     font-size: 35px;
+     color: #f2c94c;
+     text-align: center;
+   }
+
+   .phone-card p {
+     font-size: 16px;
+   }
+
+   /* end phone list */
+
+   /* Form */
+   .form-container {
+     max-width: 400px;
+     margin: 70px auto;
+     background: #fff;
+     padding: 20px 30px;
+     border-radius: 16px;
+     box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+   }
+
+   form h2 {
+     color: #000;
+     width: 10rem;
+     font-size: 40px;
+     margin: auto;
+     text-align: center;
+     margin-bottom: 20px;
+     transition: all 0.3s ease-in-out;
+   }
+
+   form h2:hover {
+     color: #fff;
+     text-shadow: 0 0 7px #000;
+     cursor: default;
+   }
+
+   label {
+     color: #000;
+     margin: 10px 0;
+     font-weight: bolder;
+   }
+
+   Form input {
+     display: block;
+     width: 100%;
+     padding: 10px;
+     margin: 10px auto;
+     border-radius: 8px;
+     border: 1px solid #ccc;
+   }
+
+   button {
+     width: 150px;
+     display: block;
+     margin: auto;
+     padding: 12px;
+     color: #000;
+     background-color: #facc15;
+     border: none;
+     border-radius: 8px;
+     font-size: 16px;
+     font-weight: bolder;
+     cursor: pointer;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+     transition: all 0.3s ease-in-out;
+   }
+
+   button:hover {
+     background-color: #fff;
+     box-shadow: 0 0 10px #eab308;
+   }
+
+   /* end form */
+
+   /* Footer */
+   footer {
+     background-color: var(--bgheader);
+     color: var(--colorheader);
+     text-align: center;
+     align-items: center;
+     font-size: 15px;
+     height: 100px;
+     margin-top: 10px;
+     padding: 25px auto;
+     box-shadow: 0 -6px 6px var(--headershadow);
+   }
+
+   #time {
+     width: 100px;
+     color: var(--colorheader);
+     font-weight: bolder;
+     font-size: 20px;
+     margin: 5px auto;
+     transition: all 0.3s ease-in-out;
+   }
+
+   #time:hover {
+     color: var(--colorheaderhover);
+     cursor: default;
+   }
+
+   footer p {
+     margin: 5px auto;
+   }
+
+   footer i {
+     padding: 3px;
+   }
+
+   footer a {
+     text-decoration: none;
+     color: var(--colorheader);
+   }
+
+   /* end footer */
+
+
+   /* About Page */
+   .about h2,
+   .our-story h2,
+   .choose-us h2,
+   .vision h2,
+   .our-team h2,
+   .h2 {
+     font-size: 35px;
+     font-weight: bolder;
+     text-align: center;
+     color: var(--colorheader);
+     margin: 20px auto;
+   }
+
+   .about h5,
+   .our-story h5,
+   .choose-us h5 {
+     font-size: 27px;
+     font-weight: bold;
+     text-align: center;
+   }
+
+   .about p,
+   .our-story p,
+   .choose-us p,
+   .vision p {
+     font-size: 22px;
+     text-align: center;
+   }
+
+   .choose-us {
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+     gap: 20px;
+     text-align: center;
+     margin: 20px auto;
+   }
+
+   .choose-us .card {
+     width: 300px;
+     height: 200px;
+     justify-content: space-between;
+     align-items: center;
+     margin: auto;
+     padding: 20px;
+     border-radius: 10px;
+     background-color: var(--bgheader);
+     color: var(--color);
+   }
+
+   .our-team {
+     text-align: center;
+     margin: 20px auto;
+   }
+
+   .team-member {
+     display: flex;
+     width: 400px;
+     height: 180px;
+     margin: auto;
+     border-radius: 10px;
+     background-color: var(--bgcard);
+     color: var(--color);
+     border: #888 solid 1px;
+     transition: all 0.3s ease-in-out;
+   }
+
+   .team-member img {
+     width: 150px;
+     height: 100%;
+     border-radius: 10px 0 0 10px;
+   }
+
+   .team-member h3 {
+     align-items: top;
+     text-align: left;
+     font-size: 30px;
+     font-weight: bold;
+     margin: 5px;
+   }
+
+   .team-member p {
+     font-size: 20px;
+     margin: 20px auto;
+   }
+
+   .icons {
+     text-align: left;
+     margin: 5px auto;
+   }
+
+   .icons a {
+     text-align: center;
+     text-decoration: none;
+     color: var(--colorheader);
+     margin: 5px;
+     transition: all 0.3s ease-in-out;
+   }
+
+
+   /* end about */
+
+   /* Responsive */
+   @media screen and (max-width:650px) {
+
+     .header {
+       flex-direction: column;
+       align-items: center;
+       height: 100px;
+       text-align: center;
+       padding: 10px;
+     }
+
+     .header a {
+       margin: 0 5px;
+       font-size: 13px;
+     }
+
+     .search input {
+       width: 77%;
+       margin-left: 5px;
+     }
+
+     .form-container {
+       max-width: 380px;
+       margin: 70px auto;
+     }
+
+   }
+
+   /* end responsive */
+   /* end CSS */
